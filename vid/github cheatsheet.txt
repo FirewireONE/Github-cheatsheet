@@ -1,0 +1,42 @@
+setup
+git config --gloabal user.name "<username>"
+git config --global user.email "<email>"
+
+git init
+touch <file name.file extension>
+
+add
+git add <file>
+git add .
+
+commit
+git commit -m "<description>"
+git log
+
+checkout
+checkout <commit-hash>
+
+branch
+git branch <new-branch-name>
+git branch
+git branch -d <branch-name>
+git merge <branch-name>
+
+push
+create new repository
+git remote -v //shows the remotes that i have//
+git remote add <name of the remote> <URL>
+git push -u <name of the remote> <branch>
+
+pull
+git pull -u <name of the remote> <branch>
+
+
+rollback
+git reset --soft HEAD~1 //this  will preserve changes done to your files
+git reset --hard HEAD~1 //this will get rid of the commit and the changes done to the files
+git revert --no-commit <commithash>..HEAD //revert changes in range of commits from head to back to that commit hash
+
+fork, clone, pull request
+https://www.notion.so/Introduction-to-GitHub-202af6f64bbd4299b15f238dcd09d2a7
+
